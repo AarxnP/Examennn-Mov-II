@@ -18,7 +18,7 @@ export default function APIScreens() {
     <View>
       <Text>Lista</Text>
       <FlatList
-      data={data.titulo}
+      data={data}
       renderItem={({item}) => 
       <View style={styles.item}>
         <Text>{item.titulo}</Text>
