@@ -11,14 +11,14 @@ export default function APIScreens() {
     .then(response => response.json())
     .then(datos => setdata(datos))
     .catch(error => console.log(error))
-    console.log(data);
+    console.log(data.series);
   }, [])
   
   return (
     <View>
       <Text>Lista</Text>
       <FlatList
-      data={data}
+      data={data.series}
       renderItem={({item}) => 
       <View style={styles.item}>
         <Text>{item.titulo}</Text>
